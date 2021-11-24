@@ -47,7 +47,7 @@ body
 	{width: 100%;}
 }*/
 
-@media (min-width: 400px) and (max-width: 600px)
+@media (min-width: 400px) and (max-width: 800px)
 {
 	.container
 	{
