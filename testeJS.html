@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Teste JS</title>
+</head>
+<body>
+
+	<form id="frmButton" style="background-color: gold;">
+		<label for="txtCEP">Informe o CEP</label>
+		<input type="text" id="txtCEP" name="cep"><br><br>
+		<!-- <button type="button" name="btnPesquisarCep" value="cep">
+			Pesquisar CEP
+		</button> -->
+		<a href="#" id="linkSite">
+			<button type="button" name="btnPesquisarCep" value="cep">
+				Pesquisar CEP
+			</button>
+		</a>
+
+	</form>
+
+	<p id="resultado"></p>
+	
+	<script>
+		var formBtn = document.getElementById("frmButton").elements;
+		var link = document.getElementById('linkSite');
+
+		formBtn['btnPesquisarCep'].onclick = function () 
+		{	
+			if (formBtn['cep'].value == 'eita')
+			{
+				/*document.getElementById("resultado").innerHTML = "Você clicou no botão para pesquisar o cep: " + formBtn['cep'].value;
+				formBtn['cep'].value = '';*/
+				alert('Entrou!');
+				link.href = 'dashboard.html';
+				
+			}
+			else
+			{
+				/*document.getElementById("resultado").innerHTML = "Não prestou!";*/
+				alert('Nome de usuario inválido')
+			}
+		}
+	</script>
+
+
+</body>
+</html>
